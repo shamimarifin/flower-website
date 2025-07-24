@@ -76,6 +76,10 @@ p {
     gap: 20px;
 }
 
+section{
+  padding-top: 110px;
+}
+
 .heading-text{
   text-align: center;
 }
@@ -183,3 +187,53 @@ nav{
   margin-top: 20px;
 }
 
+/* Flowe About Style CSS */
+
+.about-item{
+  display: flex;
+  justify-content: space-between;
+  gap: 2%;
+  align-items: center;
+}
+
+.left-image{
+  flex-basis: 48%;
+  position: relative;
+}
+.left-image .about-image{
+  width: 100%;
+  border-radius: 5px;
+}
+
+
+.left-image .badge{
+  width: 50%;
+  position: absolute;
+  top: -100px;
+  right: -100px;
+}
+
+.badge img{
+  width: 100%;
+
+}
+
+.right-content{
+  flex-basis: 48%;
+  padding: 20px;
+}
+
+.right-content h2{
+  font-size: 50px;
+}
+
+.right-content ul{
+  padding: 0px 30px;
+}
+
+.right-content ul li{
+  list-style: disc;
+  font-size: 22px;
+  color: var(--text-color);
+  margin-top: 30px;
+}
