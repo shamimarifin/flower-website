@@ -9,6 +9,7 @@
 :root {
   --primary-color: #e95a08;
   --secondary-color: #000000;
+  --hover-color : #af4406;
   --text-color: rgba(0, 0, 0, 0.5);
   --body-color: #f5f8ff;
   --heading-font: "Noto Serif", serif;
@@ -51,6 +52,7 @@ p {
 .heading-title {
   color: var(--secondary-color);
   font-family: var(--heading-font);
+  margin-bottom: 13px;
 }
 
 .heading-subtitle {
@@ -59,7 +61,7 @@ p {
   font-size: 20px;
 }
 
-span {
+.sub-color {
   color: var(--primary-color);
 }
 
@@ -74,6 +76,28 @@ span {
     gap: 20px;
 }
 
+.heading-text{
+  text-align: center;
+}
+
+.heading-text .heading-title{
+  font-size: 50px;
+}
+
+.btn{
+  background-color: var(--primary-color);
+  padding: 8px 20px;
+  color: #FFFFFF;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: background-color 0.4s;
+  font-family: var(--body-font);
+  font-weight: 600;
+}
+
+.btn:hover{
+  background-color: var(--hover-color);
+}
 
 /* Header Style CSS */
 nav{
@@ -102,9 +126,7 @@ nav{
     color: var(--secondary-color);
 }
 
-.cart{
-    font-size: 18px;
-}
+
 
 /* Banner Style CSS */
 .banner{
@@ -126,3 +148,38 @@ nav{
 .banner-image{
   flex-basis: 48%;
 }
+
+/*Plants Style CSS*/
+.flower-box{
+  padding: 50px 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24%, 1fr));
+  grid-column-gap: 15px;
+  grid-row-gap: 20px;
+}
+
+.flower-item{
+  text-align: center;
+}
+
+.flower-item img{
+  width: 100%;
+}
+
+.flower-item .content{
+  margin-top: 15px;
+}
+
+.flower-box .item{
+  text-align: center;
+}
+
+.content .price{
+  margin-top: 10px;
+}
+.flower-item .cart{
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
