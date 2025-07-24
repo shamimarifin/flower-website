@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #e95a08;
+  --secondary-color: #000000;
+  --text-color: rgba(0, 0, 0, 0.5);
+  --body-color: #f5f8ff;
+  --heading-font: "Noto Serif", serif;
+  --body-font: "Inter", sans-serif;
+}
+
+/*Default CSS*/
+body {
+  font-family: var(--body-font);
+  background-color: var(--body-color);
+}
+a {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+
+
+p {
+  color: var(--text-color);
+}
+
+/* Custom Style */
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.heading-title {
+  color: var(--secondary-color);
+  font-family: var(--heading-font);
+}
+
+.heading-subtitle {
+  font-family: var(--body-font);
+  color: var(--text-color);
+  font-size: 20px;
+}
+
+span {
+  color: var(--primary-color);
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    gap: 20px;
+}
+
+
+/* Header Style CSS */
+nav{
+    padding: 20px 0px;
+}
+.nav__menu{
+    display: flex;
+    align-items: center;
+}
+
+.nav__menu ul{
+    display: flex;
+}
+
+.nav__menu ul li{
+    margin-right: 40px;
+}
+
+.nav__menu li a{
+    color: var(--text-color);
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav__menu li a:hover{
+    color: var(--secondary-color);
+}
+
+.cart{
+    font-size: 18px;
+}
+
+/* Banner Style CSS */
+.banner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 140px 0px;
+  flex-wrap: wrap;
+}
+
+.banner-content{
+  flex-basis: 48%;
+}
+
+.banner-content h2{
+  font-size: 65px;
+}
+
+.banner-image{
+  flex-basis: 48%;
+}
