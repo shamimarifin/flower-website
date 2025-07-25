@@ -17,6 +17,12 @@
   --body-font: "Inter", sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+
+}
+
+
 /*Default CSS*/
 body {
   font-family: var(--body-font);
@@ -396,11 +402,24 @@ nav {
   display: flex;
   gap: 20px;
   flex-direction: row;
+  align-items: center;
 }
+
 
 .social-icon {
   align-self: flex-start;
 }
+
+.social-icon img:hover{
+  transform: scale(1.1);
+}
+
+.toggle,
+.menu-cancel{
+  display: none;
+}
+
+
 
 /* Responsive for small Device */
 @media screen and (max-width: 760px) {
@@ -436,7 +455,7 @@ nav {
   }
 
   section {
-    padding-top: 50px;
+    padding-top: 80px;
   }
 
   .flower-box {
@@ -483,7 +502,6 @@ nav {
     margin-right: 20px;
   }
   .btn {
-    padding: 5px 10px;
     font-size: 14px;
   }
   .join-bunch h2 {
@@ -499,4 +517,44 @@ nav {
     align-items: flex-start;
     gap: 50px;
   }
+
+  .toggle{
+  display: block;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+  .toggle i{
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  #header{
+    position: relative;
+  }
+
+
+  /* #header nav .nav_list {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 250px;
+    background-color: rgb(255, 255, 255);
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  } */
+
+  /* .menu-cancel{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+  } */
+
 }

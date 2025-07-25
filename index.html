@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     />
+
     <!-- Style CSS -->
     <link rel="stylesheet" href="./style.css" />
   </head>
@@ -24,13 +25,25 @@
           </div>
           <div class="nav__menu">
             <ul class="nav_list">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">About us</a></li>
+              <li><a href="#header">Home</a></li>
+              <li><a href="#plants">Shop</a></li>
+              <li><a href="#about-flower">About us</a></li>
+                <!-- Menu Cancel -->
+               <!-- <div class="menu-cancel">
+                <i class="fa-solid fa-xmark"></i>
+               </div> -->
             </ul>
-            <div class="cart">
-              <i class="fa-solid fa-cart-shopping"></i> Cart <span>($56)</span>
+            <div class="cart-toggle">
+              <div class="cart">
+                <i class="fa-solid fa-cart-shopping"></i> Cart
+                <span>($56)</span>
+              </div>
+              <!-- Toggle -->
+             
             </div>
+             <!-- <div class="toggle">
+                <i class="fa-solid fa-bars" id="toggle"></i>
+              </div> -->
           </div>
         </nav>
 
@@ -68,7 +81,8 @@
             </h2>
             <p class="heading-subtitle">
               Indulge your senses with the beauty and fragrance of our fresh
-              flower shop. From <br>classic roses to exotic blooms, we offer a wide variety of fresh.
+              flower shop. From <br />classic roses to exotic blooms, we offer a
+              wide variety of fresh.
             </p>
           </div>
 
@@ -222,37 +236,39 @@
                 <a href="#">Shop Now</a>
               </div>
             </div>
-
-  
           </div>
         </div>
       </section>
       <!-- Deals Area Section End -->
 
       <!-- Bounce Area Section Start -->
-       <section id="bunce">
+      <section id="bunce">
         <div class="container">
           <div class="join-bunch">
             <h2 class="text-center">Join the colorful Bunch</h2>
             <div class="newsletter">
-               <input type="text" placeholder="Write email">
-               <button class="btn">Subscriber</button>
+              <input type="text" placeholder="Write email" />
+              <button class="btn">Subscriber</button>
             </div>
           </div>
         </div>
-       </section>
-       <!-- Bounce Area Section End -->
-      
+      </section>
+      <!-- Bounce Area Section End -->
     </main>
     <!-- Main End Section Area -->
 
     <!-- Footer Area Section Start -->
-     <footer id="footer">
+    <footer id="footer">
       <div class="container">
         <div class="footer-content">
           <div>
-            <a href="#" class="footer__logo"><img src="./assets/logo.png" alt=""></a>
-            <p>Indulge your senses with the beauty and fragrance of our fresh flower shop. </p>
+            <a href="#" class="footer__logo"
+              ><img src="./assets/logo.png" alt=""
+            /></a>
+            <p>
+              Indulge your senses with the beauty and fragrance of our fresh
+              flower shop.
+            </p>
           </div>
           <div>
             <ul>
@@ -264,25 +280,37 @@
             </ul>
           </div>
           <div>
-             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Contact Us</a></li>
+            <ul>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Term of Service</a></li>
+              <li><a href="#">Help Center</a></li>
             </ul>
           </div>
           <div class="social-icon">
-             <ul>
-                <li><a href="#"><img src="./assets/icon-facebook.png" alt=""></a></li>
-                <li><a href="#"><img src="./assets/icon-linkedin.png" alt=""></a></li>
-                <li><a href="#"><img src="./assets/icon-twitter.png" alt=""></a></li>
-                <li><a href="#"><img src="./assets/icon-youtube.png" alt=""></a></li>
+            <ul>
+              <li>
+                <a href="#"><img src="./assets/icon-facebook.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./assets/icon-linkedin.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./assets/icon-twitter.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#"><img src="./assets/icon-youtube.png" alt="" /></a>
+              </li>
             </ul>
           </div>
         </div>
       </div>
-     </footer>
+    </footer>
     <!-- Footer Area Section End -->
+
+    <!-- Scroll Behavier JS -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./scripts.js"></script>
   </body>
 </html>
