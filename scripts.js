@@ -2,7 +2,7 @@ ScrollReveal({ reset: true });
 ScrollReveal().reveal('.flower-item', { delay: 500 });
 ScrollReveal().reveal('.left-image', { delay: 500 });
 ScrollReveal().reveal('.right-content', { delay: 500 });
-ScrollReveal().reveal('.item', { delay: 1000 });
+ScrollReveal().reveal('.item', { delay: 500 });
 
 
 const menuBtn = document.getElementById('#toggle i')
