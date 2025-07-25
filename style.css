@@ -9,7 +9,7 @@
 :root {
   --primary-color: #e95a08;
   --secondary-color: #000000;
-  --hover-color : #af4406;
+  --hover-color: #af4406;
   --text-color: rgba(0, 0, 0, 0.5);
   --body-color: #f5f8ff;
   --white-color: #ffffff;
@@ -38,16 +38,15 @@ button {
   outline: none;
 }
 
-
-
 p {
   color: var(--text-color);
 }
 
 /* Custom Style */
-.container{
-    max-width: 1140px;
-    margin: 0 auto;
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0px 10px;
 }
 
 .heading-title {
@@ -66,33 +65,33 @@ p {
   color: var(--primary-color);
 }
 
-.flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.grid{
-    display: grid;
-    gap: 20px;
+.grid {
+  display: grid;
+  gap: 20px;
 }
 
-section{
+section {
   padding-top: 110px;
 }
 
-.heading-text{
+.heading-text {
   text-align: center;
 }
 
-.heading-text .heading-title{
+.heading-text .heading-title {
   font-size: 50px;
 }
 
-.btn{
+.btn {
   background-color: var(--primary-color);
   padding: 8px 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   font-size: 16px;
   text-transform: uppercase;
   transition: background-color 0.4s;
@@ -100,41 +99,42 @@ section{
   font-weight: 600;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: var(--hover-color);
 }
 
 /* Header Style CSS */
-nav{
-    padding: 20px 0px;
+#header {
+  overflow: hidden;
 }
-.nav__menu{
-    display: flex;
-    align-items: center;
+nav {
+  padding: 20px 0px;
 }
-
-.nav__menu ul{
-    display: flex;
-}
-
-.nav__menu ul li{
-    margin-right: 40px;
+.nav__menu {
+  display: flex;
+  align-items: center;
 }
 
-.nav__menu li a{
-    color: var(--text-color);
-    font-size: 18px;
-    transition: color 0.3s;
+.nav__menu ul {
+  display: flex;
 }
 
-.nav__menu li a:hover{
-    color: var(--secondary-color);
+.nav__menu ul li {
+  margin-right: 40px;
 }
 
+.nav__menu li a {
+  color: var(--text-color);
+  font-size: 18px;
+  transition: color 0.3s;
+}
 
+.nav__menu li a:hover {
+  color: var(--secondary-color);
+}
 
 /* Banner Style CSS */
-.banner{
+.banner {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -142,47 +142,46 @@ nav{
   flex-wrap: wrap;
 }
 
-.banner-content{
+.banner-content {
   flex-basis: 48%;
 }
 
-.banner-content h2{
+.banner-content h2 {
   font-size: 65px;
 }
 
-.banner-image{
+.banner-image {
   flex-basis: 48%;
 }
 
 /*Plants Style CSS*/
-.flower-box{
+.flower-box {
   padding: 50px 0px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(24%, 1fr));
-  grid-column-gap: 15px;
-  grid-row-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(23%, 1fr));
+  grid-gap: 15px;
 }
 
-.flower-item{
+.flower-item {
   text-align: center;
 }
 
-.flower-item img{
+.flower-item img {
   width: 100%;
 }
 
-.flower-item .content{
+.flower-item .content {
   margin-top: 15px;
 }
 
-.flower-box .item{
+.flower-box .item {
   text-align: center;
 }
 
-.content .price{
+.content .price {
   margin-top: 10px;
 }
-.flower-item .cart{
+.flower-item .cart {
   display: block;
   width: 100%;
   margin-top: 20px;
@@ -190,7 +189,7 @@ nav{
 
 /* Flowe About Style CSS */
 
-.about-item{
+.about-item {
   display: flex;
   justify-content: space-between;
   gap: 2%;
@@ -198,87 +197,79 @@ nav{
   flex-wrap: wrap;
 }
 
-.left-image{
+.left-image {
   flex-basis: 48%;
   position: relative;
 }
-.left-image .about-image{
+.left-image .about-image {
   width: 100%;
   border-radius: 5px;
 }
 
-
-.left-image .badge{
+.left-image .badge {
   width: 50%;
   position: absolute;
   top: -100px;
   right: -100px;
 }
 
-.badge img{
+.badge img {
   width: 100%;
-
 }
 
-.right-content{
+.right-content {
   flex-basis: 48%;
   padding: 20px;
 }
 
-.right-content h2{
+.right-content h2 {
   font-size: 50px;
 }
 
-.right-content ul{
+.right-content ul {
   padding: 0px 30px;
 }
 
-.right-content ul li{
+.right-content ul li {
   list-style: disc;
   font-size: 22px;
   color: var(--text-color);
   margin-top: 30px;
 }
 
-
 /* Deals Area Section Start */
 .deals-gallery {
-display: grid;
-grid-template-areas: "item1 item3 item3"
-                     "item2 item3 item3";
-grid-gap: 20px;
-padding-top: 50px;
-margin-bottom: 80px;
-overflow: hidden;
+  display: grid;
+  grid-template-areas:
+    "item1 item3 item3"
+    "item2 item3 item3";
+  grid-gap: 20px;
+  padding-top: 50px;
+  margin-bottom: 80px;
+  overflow: hidden;
 }
 
-.deals-gallery img{
+.deals-gallery img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
- 
 }
 
-
-
-.item-shop-1 { 
+.item-shop-1 {
   grid-area: item1;
   position: relative;
-
 }
-.item-shop-2 { 
+.item-shop-2 {
   grid-area: item2;
   position: relative;
 }
-.item-shop-3 { 
+.item-shop-3 {
   grid-area: item3;
   position: relative;
+}
 
-} 
-
-
-.deals-gallery .item-content{
+.deals-gallery .item-content {
   position: absolute;
   top: 0;
   left: 0;
@@ -291,14 +282,13 @@ overflow: hidden;
   flex-direction: column;
 }
 
-.deals-gallery .item{
+.deals-gallery .item {
   position: relative;
   overflow: hidden;
 }
 
-
-.deals-gallery .item::before{
-  content: '';
+.deals-gallery .item::before {
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -308,19 +298,205 @@ overflow: hidden;
   border-radius: 20px;
 }
 
-.deals-gallery .item-content{
+.deals-gallery .item-content {
   color: var(--white-color);
 }
 
-.item-content h5{
+.item-content h5 {
   font-size: 22px;
   font-family: var(--heading-font);
 }
 
-.item-content a{
+.item-content a {
   color: var(--white-color);
   text-decoration: underline;
   margin-top: 10px;
   font-size: 20px;
   cursor: pointer;
+}
+
+/* Bunch Area Section Style */
+#bunce {
+  background-image: url("./assets/news-letter-bg.png");
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.join-bunch {
+  width: 830px;
+}
+.text-center {
+  text-align: center;
+}
+
+.join-bunch h2 {
+  font-family: var(--heading-font);
+  font-size: 50px;
+  color: var(--white-color);
+}
+
+.newsletter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.newsletter input {
+  flex-grow: 1;
+  padding: 10px 20px;
+  border: 0;
+  outline: 0;
+}
+
+.newsletter input:focus {
+  outline: 0;
+  border: 2px solid var(--primary-color);
+}
+.newsletter .btn {
+  padding: 10px 20px;
+}
+
+/* Footer Area Section */
+#footer {
+  padding: 50px 0px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10%;
+}
+
+.footer-content div {
+  flex-basis: 23%;
+}
+
+.footer-content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-content ul a {
+  color: var(--text-color);
+  transition: 0.4s;
+}
+
+.footer-content ul a:hover {
+  color: var(--secondary-color);
+}
+
+.footer-content .social-icon ul {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.social-icon {
+  align-self: flex-start;
+}
+
+/* Responsive for small Device */
+@media screen and (max-width: 760px) {
+  #header nav .nav_list {
+    display: none;
+  }
+
+  .cart {
+    margin-top: 30px;
+  }
+
+  .banner {
+    padding: 0px 0px;
+   
+  }
+
+  .banner-content {
+    flex-basis: 100%;
+    order: 1;
+    margin-top: 40px;
+  }
+
+  .banner-content .heading-title {
+    font-size: 24px;
+  }
+
+  .banner-image {
+    flex-basis: 100%;
+  }
+
+  .heading-subtitle {
+    font-size: 14px;
+  }
+
+  section {
+    padding-top: 50px;
+  }
+
+  .flower-box {
+    padding: 50px 0px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(44%, 1fr));
+    grid-gap: 15px;
+  }
+
+  .badge {
+    display: none;
+  }
+
+  .left-image,
+  .right-content {
+    flex-basis: 100%;
+  }
+
+  .right-content h2 {
+    font-size: 24px;
+  }
+
+  .right-content ul li {
+    font-size: 14px;
+  }
+
+  .right-content ul {
+    padding: 0px 10px;
+  }
+
+  .heading-text .heading-title {
+    font-size: 24px;
+  }
+
+  .deals-gallery {
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3";
+  }
+
+  .join-bunch {
+    width: 300px;
+    margin-right: 20px;
+  }
+  .btn {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  .join-bunch h2 {
+    font-size: 25px;
+  }
+
+  .newsletter .btn {
+    padding: 20px 20px;
+  }
+
+  .footer-content{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+  }
 }
